@@ -1,0 +1,47 @@
+:root {
+  --muted: #6b7280;
+  --fg: #1f2937;
+}
+
+:root[data-theme='dark'] {
+  --muted: #9aa7b2;
+  --fg: #e6eef8;
+}
+
+.empty-state {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  color: var(--muted);
+}
+
+.empty-state .icon {
+  font-size: 3.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.empty-state .title {
+  font-size: 1.25rem;
+  color: var(--fg);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.empty-state .message { max-width: 480px; margin-bottom: 1rem; }
+
+.empty-state .cta {
+  background: var(--accent, #ff6b01);
+  color: white;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width:720px) {
+  .empty-state { padding: 1.5rem; }
+  .empty-state .title { font-size: 1.05rem; }
+}

@@ -1,0 +1,13 @@
+<article class="product-card">
+	<div class="media">
+		<img [src]="product.imageUrl || 'assets/placeholder.png'" alt="{{ product.name }}" />
+	</div>
+	<div class="body">
+		<h3 class="title">{{ product.name }}</h3>
+		<p class="desc">{{ product.description }}</p>
+		<div class="meta">
+			<span class="price">₹ {{ product.price | number:'1.0-0' }}</span>
+			<button class="add">Add</button>
+		</div>
+	</div>
+</article>

@@ -1,0 +1,16 @@
+<div class="order-history-container">
+  <h2>Order History</h2>
+  
+  <div *ngIf="orders.length > 0; else noOrders">
+    <ul>
+      <li *ngFor="let order of orders">Order #{{ order.id }}</li>
+    </ul>
+  </div>
+
+  <ng-template #noOrders>
+    <app-empty-state 
+      title="No Orders Yet" 
+      message="You haven't placed any orders.">
+    </app-empty-state>
+  </ng-template>
+</div>

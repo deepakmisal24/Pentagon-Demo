@@ -1,0 +1,14 @@
+:root { --gap: 1rem; }
+.catalog { padding: 0.75rem 1rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+  align-items: stretch;
+}
+
+.empty { text-align:center; padding:3rem 1rem; color:var(--muted,#6b7280); }
+
+@media (max-width: 1100px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 820px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }

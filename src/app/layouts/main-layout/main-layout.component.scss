@@ -1,0 +1,20 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .layout-body {
+    display: flex;
+    flex: 1;
+
+    aside {
+      width: 250px;
+      background: #eaeaea;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+  }
+}
